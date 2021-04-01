@@ -17,6 +17,7 @@ Vehicle
 PK: vehicle_id(INT)
 vehicle_plate(VARCHAR)
 make_model_id(VARCHAR)
+
 Make_Model
 PK: make_model_id(INT)
 make(VARCHAR)
