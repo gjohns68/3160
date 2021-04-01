@@ -1,0 +1,106 @@
+Location
+PK: location_id(INT)
+location_name(VARCHAR)
+location_address(VARCHAR)
+latitude(FLOAT)
+longitude(FLOAT)
+drop_off_point(VARCHAR)
+
+Restaurant
+PK: restaurant(INT)
+location(VARCHAR)
+restaurant_name(VARCHAR)
+schedule(VARCHAR)
+website(VARCHAR)
+
+Vehicle
+PK: vehicle_id(INT)
+vehicle_plate(VARCHAR)
+make_model_id(VARCHAR)
+Make_Model
+PK: make_model_id(INT)
+make(VARCHAR)
+model(VARCHAR)
+
+Delivery
+PK: delivery_id(INT)
+
+Position
+PK: position_id (INT)
+
+Order
+PK: order_id (INT)
+person_id (INT)
+delivery_id (INT)
+location_id (INT)
+restaurant_id (INT)
+total_price (FLOAT)
+delivery_change (FLOAT)
+rating_id(INT)
+
+Driver
+PK: driver_id (INT)
+student_id (INT)
+license_number (VARCHAR)
+date_hired (DATE)
+
+Staff
+PK: staff_id (INT)
+person_id (INT)
+position_id (INT)
+is _admin (VARCHAR)
+
+Major
+PK: major_id (INT)
+major (VARCHAR)
+
+Person
+PK: person_id(INT)
+person_name(VARCHAR)
+person_email(VARCHAR)
+cell(BIGINT)
+
+Student
+PK:student_id(INT)
+person_id(INT)
+graduation_year(INT)
+major_id(INT)
+type_id(INT)
+
+Type
+PK: type_id(INT)
+type(VARCHAR)
+
+Rating
+PK: rating_id(INT)
+restaurant_rating_id(INT)
+driver_rating_id(INT)
+overall_rating(INT)
+Range: 1-5
+Resturant_rating
+PK: resturant_rating_id (INT)
+Resturant_rating (INT)
+Range: 1-5
+
+Driver_rating
+PK: Driver_rating_id (INT)
+Driver_rating (INT)
+Range: 1-5
+
+Title
+PK: Title_id (INT)
+Title (VARCHAR)
+Degree_college
+PK: Degree _college_id
+Degree_college (VARCHAR)
+
+Faculty
+PK: faculty_id (INT)
+Person_id (INT)
+title_id(INT)
+Degree_college_id (INT)
+Highest_degree_id (INT)
+
+Degree
+PK: Degree_id (INT)
+Degree (VARCHAR)
