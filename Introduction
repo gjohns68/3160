@@ -1,0 +1,5 @@
+Introduction (Team, Project Description):
+We are team 4 and are enhancing an existing database for Spring 2021, ITCS 3160 taught by Dr. Thompson.
+To enhance this database, we will be implementing a rating system for food delivery drivers as well as restaurants.
+We will be creating a method to rate drivers as well as the restaurants.
+It will be based on data from test records created using generatedata.com. 
