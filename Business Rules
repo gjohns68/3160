@@ -1,0 +1,15 @@
+Business Rules:
+A driver can take many deliveries, but each delivery only has one driver
+A driver can take many orders, but each order only has one driver
+A vehicle can carry many deliveries, but there is only one car per delivery
+A location can have multiple orders, but an order can only have one location
+A restaurant can make many orders, but an order can only be made by one restaurant
+The driver gets a delivery time for each delivery they make
+A restaurant may or may not have their own website
+When a driver is hired to make deliveries, the day they start is registered
+For every one delivery, there can be one rating
+All Ids should be positive numbers
+ 
+Unique column values — in a particular column, values may not be repeated.
+No missing values — in a particular column, all rows must have known values.
+Delete cascade — when a row is deleted, automatically delete all related rows.
