@@ -1,1 +1,273 @@
 
+Location
+PK: location_id(INT)
+location_name(VARCHAR)
+1 house
+2 apartment
+3 condo
+4 office building
+location_address(VARCHAR)
+90 Cherry Hill Court
+Fernandina Beach, FL 32034
+77 Valley Street
+Mocksville, NC 27028
+9208 Clark St.
+Shirley, NY 11967
+7 Vale Court
+Powder Springs, GA 30127
+9962 Evergreen Drive
+Hickory, NC 28601
+76 North Nut Swamp Street
+The Villages, FL 32162
+794 Bridle Drive
+Columbia, MD 21044
+9533 Briarwood Ave.
+Hoffman Estates, IL 60169
+37 Evergreen Street
+Charlotte, NC 28205
+46 Poplar Street
+Englishtown, NJ 07726
+
+latitude(FLOAT) , longitude(FLOAT)
+-80.41555, 134.02821
+-29.11071, 122.94161
+36.47069, 20.47457
+57.24272, 9.64709
+63.44985, 70.5097
+19.40292, -171.52435
+19.26428, -173.69563
+-31.58178, -47.3042
+48.2254, 15.45095
+-30.6583, -143.86187
+
+
+drop_off_point(VARCHAR)
+Restaurant
+PK: restaurant(INT)
+location(VARCHAR) 
+restaurant_name(VARCHAR)
+The Noodle Lane  100 charlotte
+The Dairy Boar 101 charlotte
+The Bright Bear 102 charlotte
+The Cinnamon Door 103 charlotte
+The Oval Lane 104 charlotte
+Roadhouse 105 charlotte
+Tranquility 106 charlotte
+Sunset 107 charlotte
+Jewel 108 charlotte
+The Cane 109 charlotte
+schedule(VARCHAR)
+website(VARCHAR)
+Noodlelane.com Mon-Sun 12pm-10pm
+Dairyboar.com Mon-Sun 1pm-10pm
+Brightbear.com Mon-Sun 12pm-11pm
+Cinnamondoor.com Mon-Sun 10am-10pm
+Ovallane.com Mon-Sun 9am-10pm
+Tranquility.com Mon-Sun 10am-1am
+Roadhouse.com Mon-Sun 10am- 9pm
+Sunset.com Mon-Sun 2pm-11pm
+Jewel.com Mon-Sun 4pm-1am
+Cane.com Mon-Sun 11am-11pm
+Vehicle
+PK: vehicle_id(INT)
+vehicle_plate(VARCHAR)
+make_model_id(VARCHAR)
+Make_Model
+PK: make_model_id(INT)
+make(VARCHAR) 
+model(VARCHAR)
+Make : HYUNDAI   K34 3DF    1
+Model : ELANTRA
+Make : MERCEDES-BENZ  G56 3SC     2
+Model : SPRINTER
+Make : POLARIS    3
+Model : RANGER RZR  K12 8UH     
+Make : LINCOLN    4
+Model : MARK LT     
+Make : HONDA  J65 9DH        5
+Model : CB250 NIGHTHAWK
+Make: GMC J23 4RF          6
+	Model: Savana
+ 
+
+
+
+Delivery
+PK: delivery_id(INT)
+Random generate
+200
+201
+202
+203
+204….
+Position
+PK: position_id (INT)
+Order
+PK: order_id (INT)
+Random generate
+person_id (INT)
+Random generate
+delivery_id (INT)
+Random generate
+location_id (INT)
+1 house
+2 apartment
+3 condo
+4 office building
+restaurant_id (INT)
+The Noodle Lane  100
+The Dairy Boar 101
+The Bright Bear 102
+The Cinnamon Door 103
+The Oval Lane 104
+Roadhouse 105
+Tranquility 106
+Sunset 107
+Jewel 108
+The Cane 109 charlotte
+total_price (FLOAT)
+Random generate
+delivery_change (FLOAT)
+Random generate
+rating_id(INT)
+Range(1-5)
+Driver
+PK: driver_id (INT)
+Random generate
+student_id (INT)
+Range(1-100)
+license_number (VARCHAR)
+5WAT441
+31S401
+GYZ2888
+7ZAW758
+8AAX935
+HAK785
+6LGD937
+8EOB352
+8FJN579
+795231
+date_hired (DATE)
+Staff
+PK: staff_id (INT)
+Random generate
+person_id (INT)
+Range(1-100)
+position_id (INT)
+is _admin (VARCHAR)
+Major
+PK: major_id (INT)
+Random generate
+major (VARCHAR)
+Computer Science
+Mathematics
+Biology
+Chemistry
+Engineering
+Psychology
+English
+Business
+Education
+Public Health
+Person
+PK: person_id(INT)
+Range(1-100)
+person_name(VARCHAR)
+person_email(VARCHAR)
+cell(BIGINT)
+http://www.generatedata.com/generate.php 
+
+Student
+PK:student_id(INT)
+Range (1000-1100)
+1001
+1002
+1003
+1004
+1005
+person_id(INT)
+Range(1-10)
+graduation_year(INT)
+2018
+2019
+2020
+2021
+2022
+major_id(INT)
+Range(300-400)
+301
+302
+303
+304
+305
+type_id(INT)
+1
+2 
+Type
+PK: type_id(INT)
+1 (undergraduate)
+2 (graduate)
+type(VARCHAR)
+Undergraduate
+Graduate 
+Rating
+PK: rating_id(INT)
+Range(1-5)
+restaurant_rating_id(INT)
+Range(1-5)
+driver_rating_id(INT)
+Range(1-5)
+overall_rating(FLOAT)
+Range(1-5)
+Resturant_rating
+PK: resturant_rating_id (INT)
+Range(1-5)
+Resturant_rating (INT)
+Range(1-5)
+Driver_rating
+PK: Driver_rating_id (INT)
+Driver_rating (INT)
+Range: 1-5
+Title
+PK: Title_id (INT)
+1 Professor
+2 Adjunct
+3 Assistant professor
+4 Researcher
+Title (VARCHAR)
+Degree_college
+PK: Degree _college_id
+Degree_college (VARCHAR)
+Faculty
+PK: faculty_id (INT)
+Random generate
+staff_id (INT)
+Random generate
+title_id(INT)
+1 Professor
+2 Adjunct
+3 Assistant professor
+4 Researcher
+Degree_college_id (INT)
+Range 1-10
+Highest_degree_id (INT)
+1 Bachelors
+2 Masters
+3 PhD
+Degree
+PK: Degree_id (INT)
+Range 1-10
+Degree (VARCHAR)
+Bachelor of Science in Business  
+Bachelor of Engineering Technology
+Bachelor of Technology 
+International Business Economics
+Bachelor of Business Administration
+Bachelor of Management Studies 
+Bachelor of Administrative Studies
+Bachelor of International Business Economics
+Bachelor of Fine Arts 
+Bachelor of Business 
+
+
+
